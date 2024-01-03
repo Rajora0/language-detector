@@ -13,6 +13,7 @@ setup(
             'language-detector=language_detector.cli:main',
         ],
     },
+    package_data={'': ['model.joblib']},  # Include the model file
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

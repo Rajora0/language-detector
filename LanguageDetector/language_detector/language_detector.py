@@ -1,15 +1,17 @@
 import joblib
 from typing import Dict, Union
+import os
 
 class LanguageDetector:
     
-    def __init__(self, model_path: str = 'model.joblib') -> None:
+    def __init__(self, model_filename: str = 'model.joblib') -> None:
         """
         Initialize the LanguageDetector object.
 
         Parameters:
-            model_path (str): Path to the trained model file. Default is 'model_logistic_regression.joblib'.
+            model_filename (str): Filename of the trained model file. Default is 'model.joblib'.
         """
+        model_path = os.path.join(os.path.dirname(__file__), model_filename)
         self.model = joblib.load(model_path)
 
     def detect_language(self, text: str) -> Dict[str, Union[str, float]]:

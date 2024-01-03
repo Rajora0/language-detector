@@ -2,6 +2,7 @@ README.md
 setup.py
 language_detector/__init__.py
 language_detector/language_detector.py
+language_detector/model.joblib
 language_detector.egg-info/PKG-INFO
 language_detector.egg-info/SOURCES.txt
 language_detector.egg-info/dependency_links.txt
