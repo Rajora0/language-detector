@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: language-detector
+Version: 0.1.0
+Summary: A language detector in Python
+Home-page: https://github.com/Rajora0/language-detector
+Author: Rafael Rangel
+Author-email: rafaelj492@email.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Language Detector
+
+## Overview
+
+This Python package enables language detection for given texts utilizing a pre-trained model. It supports multiple languages and provides a confidence score for the classification.
+
+## Installation
+
+```
+pip install language-detector
+```
+
+
+## Usage
+
+```
+from language_detector import LanguageDetector
+
+# Initialize the detector
+detector = LanguageDetector()
+
+# Detect language
+result = detector.detect_language("This is an example text in English.")
+print(result)
+```
+## Example Output
+
+
+```
+{'label': 'en', 'score': 0.95}
+```
+In the example above, the detected language is English ('en') with a confidence score of 0.95.
+
+## Dependencies
+
+- joblib
+- scikit-lear
+
+## Model
+
+
+The language detection model is based on a logistic regression classifier trained on a diverse dataset.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+

@@ -7,7 +7,6 @@ setup(
     install_requires=[
         'joblib',
         'scikit-learn',
-        # Outras dependências do seu projeto
     ],
     entry_points={
         'console_scripts': [
@@ -21,9 +20,9 @@ setup(
     ],
     author='Rafael Rangel',
     author_email='rafaelj492@email.com',
-    description='Um detector de linguagem em Python',
+    description='A language detector in Python',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/seu-usuario/seu-projeto',
+    url='https://github.com/Rajora0/language-detector',
     python_requires='>=3.10',
 )

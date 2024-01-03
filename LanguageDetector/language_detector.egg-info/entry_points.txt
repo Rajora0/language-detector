@@ -1,0 +1,2 @@
+[console_scripts]
+language-detector = language_detector.cli:main
